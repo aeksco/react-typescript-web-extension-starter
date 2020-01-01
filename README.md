@@ -15,6 +15,8 @@
 
 -   Includes Storybook configured to work with React + TypeScript. Note that it maintains its own `webpack.config.js` and `tsconfig.json` files. See example story in `src/components/hello/__tests__/hello.stories.tsx`
 
+-   Recommended to use `Visual Studio Code` with the `Format on Save` setting turned on.
+
 **Built with**
 
 -   [React](https://reactjs.org)
