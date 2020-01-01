@@ -1,0 +1,26 @@
+{
+  "name": "react-typescript-chrome-extension-starter",
+  "version": "1.0.0",
+  "description": "A Chrome Extension starter kit built with React, TypeScript, SCSS, Bootstrap, EsLint, Prettier & Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeksco/react-typescript-chrome-extension-starter.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "chrome",
+    "extension",
+    "boilerplate"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aeksco/react-typescript-chrome-extension-starter/issues"
+  },
+  "homepage": "https://github.com/aeksco/react-typescript-chrome-extension-starter#readme"
+}
