@@ -1,26 +1,39 @@
 {
-  "name": "react-typescript-chrome-extension-starter",
-  "version": "1.0.0",
-  "description": "A Chrome Extension starter kit built with React, TypeScript, SCSS, Bootstrap, EsLint, Prettier & Webpack",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aeksco/react-typescript-chrome-extension-starter.git"
-  },
-  "keywords": [
-    "react",
-    "typescript",
-    "chrome",
-    "extension",
-    "boilerplate"
-  ],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aeksco/react-typescript-chrome-extension-starter/issues"
-  },
-  "homepage": "https://github.com/aeksco/react-typescript-chrome-extension-starter#readme"
+    "name": "react-typescript-chrome-extension-starter",
+    "version": "1.0.0",
+    "description": "A Chrome Extension starter kit built with React, TypeScript, SCSS, Bootstrap, EsLint, Prettier & Webpack",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prettify": "prettier --write ./src/*.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aeksco/react-typescript-chrome-extension-starter.git"
+    },
+    "keywords": [
+        "react",
+        "typescript",
+        "chrome",
+        "extension",
+        "boilerplate"
+    ],
+    "author": "Alexander Schwartzberg",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/aeksco/react-typescript-chrome-extension-starter/issues"
+    },
+    "homepage": "https://github.com/aeksco/react-typescript-chrome-extension-starter#readme",
+    "devDependencies": {
+        "@types/chrome": "^0.0.91",
+        "@types/react": "^16.9.17",
+        "@types/react-dom": "^16.9.4",
+        "prettier": "1.19.1",
+        "typescript": "^3.7.4",
+        "webpack": "^4.41.5"
+    },
+    "dependencies": {
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0"
+    }
 }
