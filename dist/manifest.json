@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Chrome Extension Starter",
+    "description": "A Chrome Extension starter kit",
+    "version": "1.0.0",
+    "browser_action": {
+        "default_icon": "icon-16.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["js/backgroundPage.js"],
+        "persistent": false
+    },
+    "icons": {
+        "16": "icon-16.png",
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+    },
+    "permissions": []
+}
