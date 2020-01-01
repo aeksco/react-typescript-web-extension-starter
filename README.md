@@ -17,20 +17,20 @@
 
 **Built with**
 
--   [React]()
--   [TypeScript]()
--   [Babel]()
--   [Jest]()
--   [Storybook]()
--   [Bootstrap]()
--   [SCSS]()
--   [Webpack]()
+-   [React](https://reactjs.org)
+-   [TypeScript](https://www.typescriptlang.org/)
+-   [Storybook](https://storybook.js.org/)
+-   [Jest](https://jestjs.io)
+-   [Webpack](https://webpack.js.org/)
+-   [Babel](https://babeljs.io/)
+-   [Bootstrap](https://getbootstrap.com)
+-   [SCSS](https://sass-lang.com/)
 
 **ToDos**
 
--   Add Bootstrap + SCSS
 -   Add `EsLint`
 -   Build out `README.md`
+-   ~~Add Bootstrap + SCSS~~
 -   ~~Add `Storybook` for more controlled component development~~
 -   ~~Add `SCSS` support~~
 -   ~~Add `manifest.json`~~
