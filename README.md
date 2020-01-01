@@ -30,6 +30,8 @@
 
 -   Add `EsLint`
 -   Build out `README.md`
+    -   Description of tech used
+    -   Document directory structure
 -   ~~Add Bootstrap + SCSS~~
 -   ~~Add `Storybook` for more controlled component development~~
 -   ~~Add `SCSS` support~~
