@@ -1,0 +1,1 @@
+export { Hello } from "./component";
