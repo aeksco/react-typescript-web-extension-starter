@@ -10,19 +10,19 @@
 -   `yarn watch`
 -   `yarn prettify`
 
-**ToDos**
-
--   Add `manifest.json`
--   Add `popup.html`
--   Add `popup` React component
--   Add `SCSS` support
--   Add Bootstrap + SCSS
--   Add `EsLint`
--   Add `Jest` + snapshot tests
--   Add `Storybook` for more controlled component development
--   ~~Add example icons~~
--   Build out `README.md`
-
 **Notes**
 
 -   Includes tests with Jest - note that the `babel.config.js` and associated dependencies are only necessary for Jest to work with TypeScript.
+
+**ToDos**
+
+-   Add `SCSS` support
+-   Add Bootstrap + SCSS
+-   Add `EsLint`
+-   Add `Storybook` for more controlled component development
+-   Build out `README.md`
+-   ~~Add `manifest.json`~~
+-   ~~Add `popup.html`~~
+-   ~~Add `popup` React component~~
+-   ~~Add `Jest` + snapshot tests~~
+-   ~~Add example icons~~
