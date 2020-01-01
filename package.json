@@ -5,8 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "webpack --config webpack.prod.js",
-        "dev": "webpack --config webpack.dev.js",
-        "watch": "webpack -w --config webpack.dev.js",
+        "dev": "webpack -w --config webpack.dev.js",
         "test": "jest --config=jest.config.js",
         "prettify": "prettier --write ./src/*.ts"
     },
@@ -38,6 +37,7 @@
         "babel-jest": "^24.9.0",
         "css-loader": "^3.4.0",
         "jest": "^24.9.0",
+        "jest-css-modules": "^2.1.0",
         "node-sass": "^4.13.0",
         "prettier": "1.19.1",
         "sass-loader": "^8.0.0",
@@ -51,6 +51,7 @@
     },
     "dependencies": {
         "@types/react-test-renderer": "^16.9.1",
+        "bootstrap": "^4.4.1",
         "react": "^16.12.0",
         "react-dom": "^16.12.0",
         "react-test-renderer": "^16.12.0"

@@ -52,7 +52,11 @@ module.exports = {
     // An array of file extensions your modules use
     moduleFileExtensions: ["js", "json", "jsx", "ts", "tsx", "node"],
     // A map from regular expressions to module names that allow to stub out resources with a single module
-    // moduleNameMapper: {},
+    moduleNameMapper: {
+        "@src/(.*)": "<rootDir>/src/$1",
+        "\\.(css|less|scss|sss|styl)$":
+            "<rootDir>/node_modules/jest-css-modules",
+    },
     // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
     // modulePathIgnorePatterns: [],
     // Activates notifications for test results
