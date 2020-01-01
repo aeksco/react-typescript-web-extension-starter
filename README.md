@@ -7,20 +7,29 @@
 -   `yarn install`
 -   `yarn dev`
 -   `yarn build`
--   `yarn watch`
 -   `yarn prettify`
 
 **Notes**
 
 -   Includes tests with Jest - note that the `babel.config.js` and associated dependencies are only necessary for Jest to work with TypeScript.
 
+**Built with**
+
+-   [React]()
+-   [TypeScript]()
+-   [Babel]()
+-   [Jest]()
+-   [Bootstrap]()
+-   [SCSS]()
+-   [Webpack]()
+
 **ToDos**
 
--   Add `SCSS` support
 -   Add Bootstrap + SCSS
 -   Add `EsLint`
 -   Add `Storybook` for more controlled component development
 -   Build out `README.md`
+-   ~~Add `SCSS` support~~
 -   ~~Add `manifest.json`~~
 -   ~~Add `popup.html`~~
 -   ~~Add `popup` React component~~
