@@ -28,6 +28,10 @@
 -   [Bootstrap](https://getbootstrap.com)
 -   [SCSS](https://sass-lang.com/)
 
+**Misc. References**
+
+-   https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb
+
 **ToDos**
 
 -   Add `EsLint`
