@@ -7,10 +7,7 @@ export function Hello() {
     return (
         <div className="row">
             <div className="col-lg-12">
-                <button
-                    className="btn btn-block btn-outline-success"
-                    onClick={increment}
-                >
+                <button className="btn btn-block btn-outline-success" onClick={increment}>
                     Clicked {count} times
                 </button>
             </div>
