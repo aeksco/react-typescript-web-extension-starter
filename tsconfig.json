@@ -1,10 +1,15 @@
 {
     "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@src/*": ["src/*"]
+        },
         "target": "es5",
         "module": "commonjs",
         "moduleResolution": "node",
         "rootDir": "src",
         "outDir": "dist/js",
+        "strict": true,
         "sourceMap": true,
         "jsx": "react",
         "lib": ["es2015", "dom"],

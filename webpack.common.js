@@ -2,7 +2,8 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        eventPage: path.join(__dirname, "src/eventPage.ts"),
+        backgroundPage: path.join(__dirname, "src/backgroundPage.ts"),
+        popup: path.join(__dirname, "src/popup/index.tsx"),
     },
     output: {
         path: path.join(__dirname, "dist/js"),
@@ -19,5 +20,8 @@ module.exports = {
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js"],
+        alias: {
+            "@src": path.resolve(__dirname, "src/"),
+        },
     },
 };

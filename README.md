@@ -18,5 +18,7 @@
 -   Add `SCSS` support
 -   Add Bootstrap + SCSS
 -   Add `EsLint`
--   Add example icons
+-   Add `Jest` + snapshot tests
+-   Add `Storybook` for more controlled component development
+-   ~~Add example icons~~
 -   Build out `README.md`
