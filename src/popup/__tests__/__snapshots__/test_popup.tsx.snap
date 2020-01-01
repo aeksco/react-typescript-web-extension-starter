@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component renders 1`] = `
+<div
+  className="popup-container"
+>
+  <div
+    className="container mx-4 my-4"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-12"
+      >
+        <button
+          className="btn btn-block btn-outline-success"
+          onClick={[Function]}
+        >
+          Clicked 
+          0
+           times
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

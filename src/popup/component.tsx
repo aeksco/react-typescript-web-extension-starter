@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Hello } from "@src/components/hello";
+import "./styles.scss";
 
 // // // //
 
@@ -11,8 +12,10 @@ export function Popup() {
 
     // Renders the component tree
     return (
-        <div>
-            <Hello />
+        <div className="popup-container">
+            <div className="container mx-4 my-4">
+                <Hello />
+            </div>
         </div>
     );
 }
