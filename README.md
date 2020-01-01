@@ -22,3 +22,7 @@
 -   Add `Storybook` for more controlled component development
 -   ~~Add example icons~~
 -   Build out `README.md`
+
+**Notes**
+
+-   Includes tests with Jest - note that the `babel.config.js` and associated dependencies are only necessary for Jest to work with TypeScript.

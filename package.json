@@ -7,7 +7,7 @@
         "build": "webpack --config webpack.prod.js",
         "dev": "webpack --config webpack.dev.js",
         "watch": "webpack -w --config webpack.dev.js",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "jest --config=jest.config.js",
         "prettify": "prettier --write ./src/*.ts"
     },
     "repository": {
@@ -28,10 +28,17 @@
     },
     "homepage": "https://github.com/aeksco/react-typescript-chrome-extension-starter#readme",
     "devDependencies": {
+        "@babel/core": "^7.7.7",
+        "@babel/preset-env": "^7.7.7",
+        "@babel/preset-typescript": "^7.7.7",
         "@types/chrome": "^0.0.91",
+        "@types/jest": "^24.0.25",
         "@types/react": "^16.9.17",
         "@types/react-dom": "^16.9.4",
+        "babel-jest": "^24.9.0",
+        "jest": "^24.9.0",
         "prettier": "1.19.1",
+        "ts-jest": "^24.2.0",
         "ts-loader": "^6.2.1",
         "typescript": "^3.7.4",
         "webpack": "^4.41.5",
@@ -39,7 +46,9 @@
         "webpack-merge": "^4.2.2"
     },
     "dependencies": {
+        "@types/react-test-renderer": "^16.9.1",
         "react": "^16.12.0",
-        "react-dom": "^16.12.0"
+        "react-dom": "^16.12.0",
+        "react-test-renderer": "^16.12.0"
     }
 }
