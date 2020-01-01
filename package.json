@@ -4,6 +4,9 @@
     "description": "A Chrome Extension starter kit built with React, TypeScript, SCSS, Bootstrap, EsLint, Prettier & Webpack",
     "main": "index.js",
     "scripts": {
+        "build": "webpack --config webpack.prod.js",
+        "dev": "webpack --config webpack.dev.js",
+        "watch": "webpack -w --config webpack.dev.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "prettify": "prettier --write ./src/*.ts"
     },
@@ -29,8 +32,11 @@
         "@types/react": "^16.9.17",
         "@types/react-dom": "^16.9.4",
         "prettier": "1.19.1",
+        "ts-loader": "^6.2.1",
         "typescript": "^3.7.4",
-        "webpack": "^4.41.5"
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10",
+        "webpack-merge": "^4.2.2"
     },
     "dependencies": {
         "react": "^16.12.0",
