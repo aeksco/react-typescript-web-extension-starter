@@ -7,7 +7,7 @@
         "build": "webpack --config webpack.prod.js",
         "dev": "webpack -w --config webpack.dev.js",
         "test": "jest --config=jest.config.js",
-        "prettify": "prettier --write ./src/*.ts",
+        "prettify": "prettier --write \"src/**/*.ts*\"",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook"
     },
