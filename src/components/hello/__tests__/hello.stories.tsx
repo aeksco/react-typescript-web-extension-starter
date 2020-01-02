@@ -5,7 +5,7 @@ import { Story } from "@src/components/dev";
 
 // // // //
 
-storiesOf("Hello", module).add("example", () => {
+storiesOf("Hello", module).add("renders", () => {
     return (
         <Story>
             <Hello />
