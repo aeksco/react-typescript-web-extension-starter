@@ -15,6 +15,8 @@ yarn dev
 
 2. Open up [chrome://extensions](chrome://extensions) in your browser. Make sure the `Developer Mode` checkbox in the upper-right corner is turned on. Click `Load unpacked` and select the `dist` directory in this repository - your extension should now be loaded.
 
+![Installed Extension](https://i.imgur.com/ORuHbDR.png "Installed Extension")
+
 **Scripts**
 
 -   `yarn dev` - run `webpack` in `watch` mode
