@@ -63,14 +63,14 @@ yarn dev
     -   Description of tech used
     -   Document directory structure
     -   Add icons for tech used
-        https://cdn.svgporn.com/logos/jest.svg
-        https://cdn.svgporn.com/logos/react.svg
-        https://cdn.svgporn.com/logos/chrome.svg
-        https://cdn.svgporn.com/logos/firefox.svg
-        https://cdn.svgporn.com/logos/storybook.svg
-        https://cdn.svgporn.com/logos/storybook-icon.svg
-        https://cdn.svgporn.com/logos/typescript-icon.svg
-        https://cdn.svgporn.com/logos/typescript.svg
-        https://cdn.svgporn.com/logos/eslint.svg
-        https://cdn.svgporn.com/logos/webpack.svg
-        https://cdn.svgporn.com/logos/bootstrap.svg
+    -   https://cdn.svgporn.com/logos/jest.svg
+    -   https://cdn.svgporn.com/logos/react.svg
+    -   https://cdn.svgporn.com/logos/chrome.svg
+    -   https://cdn.svgporn.com/logos/firefox.svg
+    -   https://cdn.svgporn.com/logos/storybook.svg
+    -   https://cdn.svgporn.com/logos/storybook-icon.svg
+    -   https://cdn.svgporn.com/logos/typescript-icon.svg
+    -   https://cdn.svgporn.com/logos/typescript.svg
+    -   https://cdn.svgporn.com/logos/eslint.svg
+    -   https://cdn.svgporn.com/logos/webpack.svg
+    -   https://cdn.svgporn.com/logos/bootstrap.svg
