@@ -62,17 +62,15 @@ yarn dev
 -   Build out `README.md`
     -   Description of tech used
     -   Document directory structure
--   Add icons for tech used
--   ~~Add screenshots of Storybook~~
--   ~~Add screenshots of example extension~~
--   ~~Add links to Chrome Extension dev docs~~
--   ~~Add component with JS script injection example~~
--   ~~Add `EsLint`~~
--   ~~Add Bootstrap + SCSS~~
--   ~~Add `Storybook` for more controlled component development~~
--   ~~Add `SCSS` support~~
--   ~~Add `manifest.json`~~
--   ~~Add `popup.html`~~
--   ~~Add `popup` React component~~
--   ~~Add `Jest` + snapshot tests~~
--   ~~Add example icons~~
+    -   Add icons for tech used
+        https://cdn.svgporn.com/logos/jest.svg
+        https://cdn.svgporn.com/logos/react.svg
+        https://cdn.svgporn.com/logos/chrome.svg
+        https://cdn.svgporn.com/logos/firefox.svg
+        https://cdn.svgporn.com/logos/storybook.svg
+        https://cdn.svgporn.com/logos/storybook-icon.svg
+        https://cdn.svgporn.com/logos/typescript-icon.svg
+        https://cdn.svgporn.com/logos/typescript.svg
+        https://cdn.svgporn.com/logos/eslint.svg
+        https://cdn.svgporn.com/logos/webpack.svg
+        https://cdn.svgporn.com/logos/bootstrap.svg
