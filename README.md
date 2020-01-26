@@ -1,21 +1,17 @@
-# react-typescript-chrome-extension-starter
+# react-typescript-web-extension-starter
 
-:desktop_computer: A Chrome Extension starter kit built with React, TypeScript, SCSS, Storybook, EsLint, Jest, Bootstrap, &amp; Webpack.
+:desktop_computer: A Web Extension starter kit built with React, TypeScript, SCSS, Storybook, EsLint, Jest, Bootstrap, &amp; Webpack. Compatible with both Google Chrome + Mozilla Firefox.
 
 ![Example Extension Popup](https://i.imgur.com/Wp37usG.png "Example Extension Popup")
 
 **Getting Started**
 
-1. Run the following commands to install dependencies and
+Run the following commands to install dependencies and start developing
 
 ```
 yarn install
 yarn dev
 ```
-
-2. Open up [chrome://extensions](chrome://extensions) in your browser. Make sure the `Developer Mode` checkbox in the upper-right corner is turned on. Click `Load unpacked` and select the `dist` directory in this repository - your extension should now be loaded.
-
-![Installed Extension](https://i.imgur.com/ORuHbDR.png "Installed Extension")
 
 **Scripts**
 
@@ -26,6 +22,18 @@ yarn dev
 -   `yarn lint` - runs EsLint
 -   `yarn prettify` - runs Prettier
 
+**Loading the extension in Google Chrome**
+
+In [Google Chrome](https://www.google.com/chrome/), open up [chrome://extensions](chrome://extensions) in your browser. Make sure the `Developer Mode` checkbox in the upper-right corner is turned on. Click `Load unpacked` and select the `dist` directory in this repository - your extension should now be loaded.
+
+![Installed Extension in Google Chrome](https://i.imgur.com/ORuHbDR.png "Installed Extension in Google Chrome")
+
+**Loading the extension in Mozilla Firefox**
+
+In [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/), open up the [about:debugging](about:debugging) page in your browser. Click the `Load Temporary Add-on...` button and select the `manfiest.json` from the `dist` directory in this repository - your extension should now be loaded.
+
+![Installed Extension in Mozilla Firefox](https://i.imgur.com/gO2Lrb5.png "Installed Extension in Mozilla Firefox")
+
 **Notes**
 
 -   Includes ESLint configured to work with TypeScript and Prettier.
@@ -35,6 +43,8 @@ yarn dev
 -   Recommended to use `Visual Studio Code` with the `Format on Save` setting turned on.
 
 -   Example icons courtesy of [FontAwesome](https://fontawesome.com).
+
+-   [Microsoft Edge]() is not currently supported.
 
 -   Includes Storybook configured to work with React + TypeScript. Note that it maintains its own `webpack.config.js` and `tsconfig.json` files. See example story in `src/components/hello/__tests__/hello.stories.tsx`
 
@@ -51,11 +61,13 @@ yarn dev
 -   [Babel](https://babeljs.io/)
 -   [Bootstrap](https://getbootstrap.com)
 -   [SCSS](https://sass-lang.com/)
+-   [webextension-polyfill-ts](https://github.com/Lusito/webextension-polyfill-ts)
 
 **Misc. References**
 
 -   [Chrome Extension Developer Guide](https://developer.chrome.com/extensions/devguide)
--   https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb
+-   [Firefox Extension Developer Guide](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
+-   [Eslint + Prettier + Typescript Guide](https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb)
 
 **ToDos**
 
