@@ -1,9 +1,13 @@
-import * as React from "react";
+import React, { FunctionComponent } from "react";
 import "@src/scss/app.scss";
 
 // // // //
 
-export function Story(props: { children: React.ReactNode }): React.ReactNode {
+interface StoryProps {
+    children: React.ReactNode;
+}
+
+export const Story: FunctionComponent<StoryProps> = (props: StoryProps) => {
     return (
         <div className="container mt-4">
             <div className="row d-flex justify-content-center">
@@ -11,4 +15,4 @@ export function Story(props: { children: React.ReactNode }): React.ReactNode {
             </div>
         </div>
     );
-}
+};

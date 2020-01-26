@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 const SRC_PATH = path.join(__dirname, "../src");
 const STORIES_PATH = path.join(__dirname, "../stories");
 const merge = require("webpack-merge");
@@ -32,5 +33,30 @@ module.exports = merge(
     {
         mode: "development",
         devtool: "inline-source-map",
-    }
+    },
+    {
+        plugins: [
+            new webpack.NormalModuleReplacementPlugin(
+                /webextension-polyfill-ts/,
+                resource => {
+                    // Gets absolute path to mock `webextension-polyfill-ts` package
+                    // NOTE: this is required beacuse the `webextension-polyfill-ts`
+                    // package can't be used outside the environment provided by web extensions
+                    const absRootMockPath = path.resolve(
+                        __dirname,
+                        "../src/__mocks__/webextension-polyfill-ts.ts",
+                    );
+
+                    // Gets relative path from requesting module to our mocked module
+                    const relativePath = path.relative(
+                        resource.context,
+                        absRootMockPath,
+                    );
+
+                    // Updates the `resource.request` to reference our mocked module instead of the real one
+                    resource.request = relativePath;
+                },
+            ),
+        ],
+    },
 );
