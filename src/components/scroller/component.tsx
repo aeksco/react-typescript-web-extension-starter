@@ -1,5 +1,6 @@
-import * as React from "react";
+import React, { FunctionComponent } from "react";
 import "./styles.scss";
+import { browser, Tabs } from "webextension-polyfill-ts";
 
 // // // //
 
@@ -11,49 +12,49 @@ const scrollToBottomScript = `window.scroll(0,9999999)`;
  * Executes a string of Javascript on the current tab
  * @param code The string of code to execute on the current tab
  */
-function executeScript(code: string) {
+function executeScript(code: string): void {
     // Query for the active tab in the current window
-    chrome.tabs.query({ active: true, currentWindow: true }, (tabs: any[]) => {
-        // Pulls current tab from chrome.tabs.query response
-        const currentTab: any | undefined = tabs[0];
+    browser.tabs
+        .query({ active: true, currentWindow: true })
+        .then((tabs: Tabs.Tab[]) => {
+            // Pulls current tab from browser.tabs.query response
+            const currentTab: Tabs.Tab | undefined = tabs[0];
 
-        // Short circuits function execution is current tab isn't found
-        if (!currentTab) {
-            return;
-        }
+            // Short circuits function execution is current tab isn't found
+            if (!currentTab) {
+                return;
+            }
 
-        // Executes the script in the current tab
-        chrome.tabs.executeScript(
-            currentTab.id,
-            {
-                code,
-            },
-            () => {
-                console.log("Done Scrolling");
-            },
-        );
-    });
+            // Executes the script in the current tab
+            browser.tabs
+                .executeScript(currentTab.id, {
+                    code,
+                })
+                .then(() => {
+                    console.log("Done Scrolling");
+                });
+        });
 }
 
 // // // //
 
-export function Scroller() {
+export const Scroller: FunctionComponent = () => {
     return (
         <div className="row">
             <div className="col-lg-12">
                 <button
                     className="btn btn-block btn-outline-dark"
-                    onClick={() => executeScript(scrollToTopScript)}
+                    onClick={(): void => executeScript(scrollToTopScript)}
                 >
                     Scroll To Top
                 </button>
                 <button
                     className="btn btn-block btn-outline-dark"
-                    onClick={() => executeScript(scrollToBottomScript)}
+                    onClick={(): void => executeScript(scrollToBottomScript)}
                 >
                     Scroll To Bottom
                 </button>
             </div>
         </div>
     );
-}
+};

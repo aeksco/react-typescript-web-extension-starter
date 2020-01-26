@@ -1,14 +1,15 @@
-import * as React from "react";
+import React, { FunctionComponent } from "react";
 import { Hello } from "@src/components/hello";
+import { browser } from "webextension-polyfill-ts";
 import { Scroller } from "@src/components/scroller";
 import "./styles.scss";
 
 // // // //
 
-export function Popup() {
+export const Popup: FunctionComponent = () => {
     // Sends the `popupMounted` event
     React.useEffect(() => {
-        chrome.runtime.sendMessage({ popupMounted: true });
+        browser.runtime.sendMessage({ popupMounted: true });
     }, []);
 
     // Renders the component tree
@@ -21,4 +22,4 @@ export function Popup() {
             </div>
         </div>
     );
-}
+};
