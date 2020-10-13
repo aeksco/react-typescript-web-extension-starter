@@ -8,19 +8,6 @@ module.exports = {
         "@storybook/addon-viewport/register",
     ],
     webpackFinal: async (config) => {
-        //     config.module.rules.push({
-        //         test: /\.(ts|tsx)$/,
-        //         use: [
-        //             {
-        //                 loader: require.resolve("ts-loader"),
-        //             },
-        //             // Optional
-        //             {
-        //                 loader: require.resolve("react-docgen-typescript-loader"),
-        //             },
-        //         ],
-        //     });
-
         config.module.rules.push({
             exclude: /node_modules/,
             test: /\.scss$/,
