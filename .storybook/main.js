@@ -7,20 +7,7 @@ module.exports = {
         "@storybook/addon-actions/register",
         "@storybook/addon-viewport/register",
     ],
-    webpackFinal: async config => {
-        config.module.rules.push({
-            test: /\.(ts|tsx)$/,
-            use: [
-                {
-                    loader: require.resolve("ts-loader"),
-                },
-                // Optional
-                {
-                    loader: require.resolve("react-docgen-typescript-loader"),
-                },
-            ],
-        });
-
+    webpackFinal: async (config) => {
         config.module.rules.push({
             exclude: /node_modules/,
             test: /\.scss$/,
@@ -49,7 +36,7 @@ module.exports = {
             ...config.plugins,
             new webpack.NormalModuleReplacementPlugin(
                 /webextension-polyfill-ts/,
-                resource => {
+                (resource) => {
                     // Gets absolute path to mock `webextension-polyfill-ts` package
                     // NOTE: this is required beacuse the `webextension-polyfill-ts`
                     // package can't be used outside the environment provided by web extensions
@@ -67,7 +54,7 @@ module.exports = {
                     // Updates the `resource.request` to reference our mocked module instead of the real one
                     resource.request = relativePath;
                 },
-            )
+            ),
         ];
 
         return config;
