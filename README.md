@@ -103,4 +103,4 @@ In [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/), open up the [a
 
 **Notable forks**
 
--  [capaj](https://github.com/capaj/react-typescript-web-extension-starter) - Chakra-ui instead of Bootstrap+SCSS
+-   [capaj](https://github.com/capaj/react-typescript-web-extension-starter) - Chakra-ui instead of Bootstrap+SCSS, Storybook removed
