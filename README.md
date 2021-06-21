@@ -100,3 +100,7 @@ In [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/), open up the [a
 -   [Chrome Extension Developer Guide](https://developer.chrome.com/extensions/devguide)
 -   [Firefox Extension Developer Guide](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
 -   [Eslint + Prettier + Typescript Guide](https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb)
+
+**Notable forks**
+
+-   [capaj](https://github.com/capaj/react-typescript-web-extension-starter) - Chakra-ui instead of Bootstrap+SCSS, Storybook removed
