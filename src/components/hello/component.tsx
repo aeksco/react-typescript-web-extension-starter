@@ -1,9 +1,8 @@
-import React, { FunctionComponent } from "react";
-import "./styles.scss";
+import React from "react";
 
 // // // //
 
-export const Hello: FunctionComponent = () => {
+export function Hello() {
     return (
         <div className="row">
             <div className="col-lg-12 text-center">
@@ -11,4 +10,4 @@ export const Hello: FunctionComponent = () => {
             </div>
         </div>
     );
-};
+}

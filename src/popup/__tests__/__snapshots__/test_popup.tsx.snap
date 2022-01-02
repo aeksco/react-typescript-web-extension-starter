@@ -2,10 +2,10 @@
 
 exports[`component renders 1`] = `
 <div
-  className="popup-container"
+  className="popupContainer"
 >
   <div
-    className="container mx-4 my-4"
+    className="mx-4 my-4"
   >
     <div
       className="row"
@@ -22,24 +22,22 @@ exports[`component renders 1`] = `
     </div>
     <hr />
     <div
-      className="row"
+      className="grid gap-3 grid-cols-2 mt-3 w-full"
     >
-      <div
-        className="col-lg-12"
+      <button
+        className="btn"
+        data-testid="scroll-to-top"
+        onClick={[Function]}
       >
-        <button
-          className="btn btn-block btn-outline-dark"
-          onClick={[Function]}
-        >
-          Scroll To Top
-        </button>
-        <button
-          className="btn btn-block btn-outline-dark"
-          onClick={[Function]}
-        >
-          Scroll To Bottom
-        </button>
-      </div>
+        Scroll To Top
+      </button>
+      <button
+        className="btn"
+        data-testid="scroll-to-bottom"
+        onClick={[Function]}
+      >
+        Scroll To Bottom
+      </button>
     </div>
   </div>
 </div>
