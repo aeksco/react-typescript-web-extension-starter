@@ -1,5 +1,4 @@
 dist/js/*
-.vscode
 storybook-static/*
 
 /node_modules

@@ -16,3 +16,4 @@
 -   Updated placeholder icon for extension
 -   Verified support for Microsoft Edge
 -   Updated `README.md` screenshots
+-   Add `.vscode` directory with workplace settings and recommended extensions
