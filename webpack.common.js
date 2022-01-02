@@ -16,23 +16,32 @@ module.exports = {
                 test: /\.tsx?$/,
                 use: "ts-loader",
             },
+            // Treat src/css/app.css as a global stylesheet
             {
-                exclude: /node_modules/,
-                test: /\.scss$/,
+                test: /\app.css$/,
                 use: [
+                    "style-loader",
+                    "css-loader",
+                    "postcss-loader",
+                ],
+            },
+            // Load .module.css files as CSS modules
+            {
+                test: /\.module.css$/,
+                use: [
+                    "style-loader",
                     {
-                        loader: "style-loader", // Creates style nodes from JS strings
+                        loader: "css-loader",
+                        options: {
+                            modules: true,
+                        },
                     },
-                    {
-                        loader: "css-loader", // Translates CSS into CommonJS
-                    },
-                    {
-                        loader: "sass-loader", // Compiles Sass to CSS
-                    },
+                    "postcss-loader",
                 ],
             },
         ],
     },
+    // Setup @src path resolution for TypeScript files
     resolve: {
         extensions: [".ts", ".tsx", ".js"],
         alias: {
