@@ -48,7 +48,16 @@ module.exports = {
                     );
 
                     // Updates the `resource.request` to reference our mocked module instead of the real one
-                    resource.request = relativePath;
+                    switch (process.platform) {
+                        case "win32": {
+                            resource.request = "./" + relativePath;
+                            break;
+                        }
+                        default: {
+                            resource.request = relativePath;
+                            break;
+                        }
+                    }
                 },
             ),
         ];
