@@ -23,3 +23,4 @@
     "host_permissions": ["https:\/\/*/*"],
     "permissions": ["tabs", "activeTab", "notifications", "scripting"]
 }
+
