@@ -101,7 +101,7 @@ In [Microsoft Edge](https://www.microsoft.com/en-us/edge), open up [edge://exten
 -   [Webpack](https://webpack.js.org/)
 -   [Babel](https://babeljs.io/)
 -   [TailwindCSS](https://tailwindcss.com/)
--   [webextension-polyfill-ts](https://github.com/Lusito/webextension-polyfill-ts)
+-   [webextension-polyfill](https://github.com/mozilla/webextension-polyfill)
 
 **Misc. References**
 

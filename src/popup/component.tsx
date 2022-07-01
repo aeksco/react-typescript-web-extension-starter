@@ -1,36 +1,45 @@
 import React from "react";
 import { Hello } from "@src/components/hello";
-import { browser, Tabs } from "webextension-polyfill-ts";
+import browser, { Tabs } from "webextension-polyfill";
 import { Scroller } from "@src/components/scroller";
 import css from "./styles.module.css";
 
 // // // //
 
 // Scripts to execute in current tab
-const scrollToTopScript = `window.scroll(0,0)`;
-const scrollToBottomScript = `window.scroll(0,9999999)`;
+const scrollToTopPosition = 0;
+const scrollToBottomPosition = 9999999;
+
+function greetUser(position: number) {
+  window.scroll(0,position);
+}
 
 /**
  * Executes a string of Javascript on the current tab
  * @param code The string of code to execute on the current tab
  */
-function executeScript(code: string): void {
+function executeScript(position: number): void {
     // Query for the active tab in the current window
     browser.tabs
         .query({ active: true, currentWindow: true })
         .then((tabs: Tabs.Tab[]) => {
             // Pulls current tab from browser.tabs.query response
-            const currentTab: Tabs.Tab | undefined = tabs[0];
+            const currentTab: Tabs.Tab | number = tabs[0];
 
             // Short circuits function execution is current tab isn't found
             if (!currentTab) {
                 return;
             }
+            const currentTabId: number = currentTab.id as number;
 
             // Executes the script in the current tab
-            browser.tabs
-                .executeScript(currentTab.id, {
-                    code,
+            browser.scripting
+                .executeScript({
+                    target: {
+                        tabId: currentTabId
+                    },
+                    func: greetUser,
+                    args: [position]
                 })
                 .then(() => {
                     console.log("Done Scrolling");
@@ -54,10 +63,10 @@ export function Popup() {
                 <hr />
                 <Scroller
                     onClickScrollTop={() => {
-                        executeScript(scrollToTopScript);
+                        executeScript(scrollToTopPosition);
                     }}
                     onClickScrollBottom={() => {
-                        executeScript(scrollToBottomScript);
+                        executeScript(scrollToBottomPosition);
                     }}
                 />
             </div>
