@@ -10,7 +10,7 @@ import css from "./styles.module.css";
 const scrollToTopPosition = 0;
 const scrollToBottomPosition = 9999999;
 
-function greetUser(position: number) {
+function scrollWindow(position: number) {
   window.scroll(0,position);
 }
 
@@ -38,7 +38,7 @@ function executeScript(position: number): void {
                     target: {
                         tabId: currentTabId
                     },
-                    func: greetUser,
+                    func: scrollWindow,
                     args: [position]
                 })
                 .then(() => {
