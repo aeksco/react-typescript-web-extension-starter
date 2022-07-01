@@ -31,14 +31,14 @@ module.exports = {
         config.plugins = [
             ...config.plugins,
             new webpack.NormalModuleReplacementPlugin(
-                /webextension-polyfill-ts/,
+                /webextension-polyfill/,
                 (resource) => {
                     // Gets absolute path to mock `webextension-polyfill-ts` package
                     // NOTE: this is required beacuse the `webextension-polyfill-ts`
                     // package can't be used outside the environment provided by web extensions
                     const absRootMockPath = path.resolve(
                         __dirname,
-                        "../src/__mocks__/webextension-polyfill-ts.ts",
+                        "../src/__mocks__/webextension-polyfill.ts",
                     );
 
                     // Gets relative path from requesting module to our mocked module
