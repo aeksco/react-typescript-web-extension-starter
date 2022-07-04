@@ -112,3 +112,4 @@ In [Microsoft Edge](https://www.microsoft.com/en-us/edge), open up [edge://exten
 **Notable forks**
 
 -   [capaj](https://github.com/capaj/react-typescript-web-extension-starter) - Chakra-ui instead of TailwindCSS, Storybook removed
+-   [DesignString](https://github.com/DesignString/react-typescript-web-extension-starter) - Vite Js instead of Webpack
