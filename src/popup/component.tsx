@@ -20,7 +20,7 @@ function scrollWindow(position: number) {
  */
 function executeScript(position: number): void {
     // Query for the active tab in the current window
-    browser?.tabs
+    browser.tabs
         .query({ active: true, currentWindow: true })
         .then((tabs: Tabs.Tab[]) => {
             // Pulls current tab from browser.tabs.query response
@@ -54,7 +54,7 @@ export function Popup() {
     React.useEffect(() => {
         // NOTE - we use conditional chaining on `browser`import
         // because it doesn't load up in Storybook
-        browser?.runtime.sendMessage({ popupMounted: true });
+        browser.runtime.sendMessage({ popupMounted: true });
     }, []);
 
     // Renders the component tree
