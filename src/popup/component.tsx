@@ -52,6 +52,8 @@ function executeScript(position: number): void {
 export function Popup() {
     // Sends the `popupMounted` event
     React.useEffect(() => {
+        // NOTE - we use conditional chaining on `browser`import
+        // because it doesn't load up in Storybook
         browser?.runtime.sendMessage({ popupMounted: true });
     }, []);
 
