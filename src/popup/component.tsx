@@ -11,7 +11,7 @@ const scrollToTopPosition = 0;
 const scrollToBottomPosition = 9999999;
 
 function scrollWindow(position: number) {
-  window.scroll(0,position);
+    window.scroll(0, position);
 }
 
 /**
@@ -20,7 +20,7 @@ function scrollWindow(position: number) {
  */
 function executeScript(position: number): void {
     // Query for the active tab in the current window
-    browser.tabs
+    browser?.tabs
         .query({ active: true, currentWindow: true })
         .then((tabs: Tabs.Tab[]) => {
             // Pulls current tab from browser.tabs.query response
@@ -36,10 +36,10 @@ function executeScript(position: number): void {
             browser.scripting
                 .executeScript({
                     target: {
-                        tabId: currentTabId
+                        tabId: currentTabId,
                     },
                     func: scrollWindow,
-                    args: [position]
+                    args: [position],
                 })
                 .then(() => {
                     console.log("Done Scrolling");
@@ -52,7 +52,7 @@ function executeScript(position: number): void {
 export function Popup() {
     // Sends the `popupMounted` event
     React.useEffect(() => {
-        browser.runtime.sendMessage({ popupMounted: true });
+        browser?.runtime.sendMessage({ popupMounted: true });
     }, []);
 
     // Renders the component tree
