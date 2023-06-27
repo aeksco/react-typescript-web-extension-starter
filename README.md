@@ -84,8 +84,6 @@ In [Microsoft Edge](https://www.microsoft.com/en-us/edge), open up [edge://exten
 
 -   Example icons courtesy of [Heroicons](https://heroicons.com/).
 
--   [Microsoft Edge](https://www.microsoft.com/en-us/edge) is not currently supported.
-
 -   Includes Storybook configured to work with React + TypeScript. Note that it maintains its own `webpack.config.js` and `tsconfig.json` files. See example story in `src/components/hello/__tests__/hello.stories.tsx`
 
 -   Includes a custom mock for the [webextension-polyfill-ts](https://github.com/Lusito/webextension-polyfill-ts) package in `src/__mocks__`. This allows you to mock any browser APIs used by your extension so you can develop your components inside Storybook.
