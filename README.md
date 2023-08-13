@@ -2,7 +2,7 @@
 [![GitHub watchers](https://img.shields.io/github/watchers/aeksco/react-typescript-web-extension-starter.svg?style=social&label=Watch&style=plastic)]()
 [![GitHub forks](https://img.shields.io/github/forks/aeksco/react-typescript-web-extension-starter.svg?style=social&label=Fork&style=plastic)]()
 [![GitHub contributors](https://img.shields.io/github/contributors/aeksco/react-typescript-web-extension-starter.svg)](https://github.com/aeksco/react-typescript-web-extension-starter/graphs/contributors)
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/aeksco/react-typescript-web-extension-starter/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/aeksco/react-typescript-web-extension-starter.svg)](https://github.com/aeksco/react-typescript-web-extension-starter/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/aeksco/react-typescript-web-extension-starter.svg)](https://github.com/aeksco/react-typescript-web-extension-starter/commits/master)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/aeksco/react-typescript-web-extension-starter.svg?style=flat)]()
